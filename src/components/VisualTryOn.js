@@ -21,7 +21,7 @@ const VisualTryOn = () => {
   useEffect(() => {
     const fetchDress = async () => {
       try {
-        const response = await axios.get(`http://tryon-szil.onrender.com/dresses/${id}`);
+        const response = await axios.get(`https://tryon-szil.onrender.com/dresses/${id}`);
         setDress(response.data);
       } catch (err) {
         console.error('Error fetching dress:', err);
