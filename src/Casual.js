@@ -65,7 +65,7 @@ const Casual = () => {
                     <div 
                         key={item._id} 
                         className="casual-item" 
-                        onClick={() => navigate(`/dresses/${item._id}`)} // Navigate to details page
+                        onClick={() => navigate(`/dress/${item._id}`)} // Navigate to details page
                     >
                         <img src={item.image} alt={item.name} className="casual-image" />
                         <div className="casual-info">
