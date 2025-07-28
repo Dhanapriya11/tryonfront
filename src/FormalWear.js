@@ -9,7 +9,7 @@ const FormalWear = () => {
     const navigate = useNavigate();
     // Fetch formal wear from the backend
     useEffect(() => {
-        axios.get("http://tryon-szil.onrender.com/formalwears") // Updated URL
+        axios.get("https://tryon-szil.onrender.com/formalwears") // Updated URL
             .then((response) => {
                 console.log("Formal Wear Data:", response.data); // Log the data to check it
                 setFormals(response.data);
