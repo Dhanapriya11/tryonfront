@@ -139,7 +139,7 @@ const styles = {
   
   container: {
    
-    backgroundImage: "url('https://cdn.shopify.com/s/files/1/0070/7032/articles/how_20to_20start_20a_20clothing_20brand_26e960f5-9ca7-445b-99fb-ac30dd860dd5.png')", // Replace with your image URL
+    backgroundImage: "url('https://img.freepik.com/premium-photo/pink-clothing-rack-pastel-background-generative-ai_431161-11098.jpg?w=740')", // Replace with your image URL
     backgroundSize: "cover",  // Ensures the image covers the entire screen
     backgroundPosition: "center",  // Centers the image
     minHeight: "100vh",  // Ensures the background cove
