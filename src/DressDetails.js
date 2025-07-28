@@ -14,11 +14,11 @@ const DressDetails = () => {
     const navigate = useNavigate();
     
     useEffect(() => {
-        axios.get(`http://tryon-szil.onrender.com/dresses/${id}`)
+        axios.get(`https://tryon-szil.onrender.com/dresses/${id}`)
             .then(response => setDress(response.data))
             .catch(error => console.error("Error fetching dress details:", error));
 
-        axios.get(`http://tryon-szil.onrender.com/comments/${id}`)
+        axios.get(`https://tryon-szil.onrender.com/comments/${id}`)
             .then(response => setComments(response.data))
             .catch(error => console.error("Error fetching comments:", error));
     }, [id]);
@@ -26,7 +26,7 @@ const DressDetails = () => {
     const handleAddComment = () => {
         if (newComment.trim() === "") return;
     
-        axios.post(`http://tryon-szil.onrender.com/comments/${id}`, { 
+        axios.post(`https://tryon-szil.onrender.com/comments/${id}`, { 
             user: "Guest",
             text: newComment, 
             rating: 5
