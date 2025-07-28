@@ -9,7 +9,7 @@ const [searchTerm, setSearchTerm] = useState("");
     const navigate = useNavigate();
   useEffect(() => {
     // Fetch Traditional Wear data from the backend
-    axios.get('http://tryon-szil.onrender.com/traditionalwears')
+    axios.get('https://tryon-szil.onrender.com/traditionalwears')
       .then(response => {
         console.log('Traditional Wear Data:', response.data);
         setTraditionalWear(response.data);
